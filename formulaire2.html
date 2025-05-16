@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire d'Inscription</title>
+    <style>
+        body { font-size: 20px;}
+        .form{
+            container: auto;
+        }
+        .row {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .row label {
+            width: 100px;
+        }
+        .row input {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .buttons {
+            margin-top: 30px;
+        }
+        #pp {
+            text-align: center ; color: rgb(119, 3, 3); font-size: large; text-decoration: underline;
+        }
+        #po {
+            text-align: center; width: 500px; 
+        }
+        h1 { text-align: center; 
+
+        }
+        #pic{
+            background-image: url(img/tel4.jpg); background:  no-repeat cover center scroll;
+        }
+    </style>
+</head><div id="pic">
+<body id="07">
+    
+    <div class="form">
+    <h1>Formulaire d'Inscription</h1>
+    <form action="traitement.php" method="post">
+        
+        <fieldset>
+            <legend id="pp">État Civil</legend>
+
+            <div class="row">
+                <label for="nom">Nom:</label>
+                <input type="text" name="nom">
+
+                <label for="prénom">Prénom:</label>
+                <input type="text" name="prénom">
+            </div>
+
+            <div class="row">
+                <label for="matricule">Matricule:</label>
+                <input type="text" name="matricule">
+
+                <label>Sexe:</label>
+                <input type="text" name="sexe" >
+            </div>
+
+            <div class="row">
+                <label for="date_naissance">Date Naissance:</label>
+                <input type="date" name="date_naissance">
+
+                <label for="age">Âge:</label>
+                <input type="number" name="age">
+            </div>
+
+        </fieldset><br>
+
+        <fieldset id="po">
+            <legend id="pp">Mes Diplômes</legend>
+            <input type="checkbox" name="diplome[]" value="CEP" id="CEP"> <label for="CEP">CEP</label>
+            <input type="checkbox" name="diplome[]" value="BEPC" id="BEPC"><label for="BEPC">BEPC</label>
+            <input type="checkbox" name="diplome[]" value="BAC" id="BAC"><label for="BAC">BAC</label>
+            <input type="checkbox" name="diplome[]" value="Licence" id="LICENCE"><label for="LICENCE">LICENCE</label>
+            <input type="checkbox" name="diplome[]" value="Master" id="MASTER"><label for="MASTER">MASTER</label>
+        </fieldset> <br>
+
+        <fieldset id="po">
+            <legend id="pp">Expertise</legend>
+            <input type="radio" name="expertise" value="IT"> Expert en IT
+            <input type="radio" name="expertise" value="Bavardage"> Expert en AIP
+            <input type="radio" name="expertise" value="Bavardage"> Expert en ARI
+        </fieldset> <br>
+<fieldset id="po">
+    <legend id="pp">Les Boutons</legend>
+        <div class="buttons">
+            <button type="submit"><a href="CV.html">Envoyer</a></button>
+            <button type="reset">Effacer</button>
+            <button type="button" onclick="window.location.href='index.html'">Quitter</button>
+        </div>
+    
+    </fieldset>
+
+    </form>
+</div>
+</div>
+<p><a href="formulaire1.html#06">précédent..</a></p>
+<p><a href="CV.html#08">suivant...</a></p>
+
+</body>
+</html>

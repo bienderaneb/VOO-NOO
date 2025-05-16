@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Site ChezNoo!</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #f5f7fa;
+    }
+
+    frameset {
+      border: none;
+    }
+
+    frame {
+      border: none;
+    }
+
+    /* Ajout de couleurs et styles dans les fichiers appelés */
+  </style>
+</head>
+
+<frameset rows="25%,75%" frameborder="0" border="0" framespacing="0">
+  <!-- Haut : Logo, Titre, Image -->
+  <frame src="header.html" name="tête" scrolling="no" noresize>
+
+  <!-- Bas : Menu + Contenu -->
+  <frameset cols="20%,80%" frameborder="0" border="0" framespacing="0">
+    <frame src="menu.html" name="menu" noresize>
+    <frame src="com.html" name="contentF">
+  </frameset>
+</frameset>
+
+<noframes>
+  <body style="text-align:center; font-family:sans-serif; padding:20px;">
+    <h2>Votre navigateur ne supporte pas les frames 😢</h2>
+    <p>Veuillez essayer avec un navigateur plus moderne ou activer les frames.</p>
+  </body>
+</noframes>
+
+</html>

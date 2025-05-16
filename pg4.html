@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+ <head>
+ 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+ 	 <title>Expérience en CSS</title>
+ 	 <style type="text/css">
+ 	 	
+		body{color: navy; font-family:'Trebuchet MS',times,verdana;}
+h1{text-align:center; color:rgb(65, 243, 77); }
+p{font-size:14px; }
+h1{font-size: large;}
+.gras{font-weight: bold;}
+.italique{font-style: italic;}
+h1{text-decoration: underline overline;}
+.majuscules{text-transform: uppercase;}
+.interligne{line-height:2em;text-align: justify;}
+.ecart{letter-spacing: 0.4em;word-spacing: 0.4em;}
+.rapproch{letter-spacing: -3px;word-spacing: -3px;}
+#font { background-image: url(pic.jpg); background: no-repeat cover center scroll;}
+
+.pasderetrait{list-style-position: inside;}
+.retrait{list-style-position: outside;}
+.cercle
+{
+list-style-type: circle;
+}
+.carre
+{
+list-style-type:square;
+}
+.rien
+{
+list-style-type:none;}
+.disque { list-style-type: disc;}
+
+.commence_a_zero
+{
+list-style-type: decimal-leading-zero;
+}
+.lettres_minuscules
+{
+list-style-type: lower-alpha;
+}
+.chiffres_romains
+{
+list-style-type: upper-roman;
+}
+.lettres_grecques
+{
+list-style-type: lower-greek;
+}
+.lettres_majuscules {
+list-style-type: upper-alpha;}
+
+/* Quelques styles supplémentairesjuste pour la présentation
+En plus ça vous fait quelques rappels;o) */
+h2
+{
+text-indent: 20px;
+font-family: Arial, Verdana, "Times New Roman", serif;
+color: rgb(32, 218, 110);
+}
+em
+{
+background-color: yellow;
+}
+strong
+{
+color: red;
+}
+ul{
+list-style-image: url("D:\monsite\images\ma-photouac.jpg.jpg");
+}
+/* Juste pour améliorer la présentation : */
+a
+{
+color: blue;
+text-decoration: none;}
+
+ 	 </style>
+ 	</head>
+<body>
+	<p id="04"> <h3>Voici une liste non ordonnée </h3></p>
+	<ul>
+<li>Fraises</li>
+<li>Framboises</li>
+<li>Cerises</li>
+</ul>
+<p> <h3>Voici une liste ordonnée </h3> </p>
+<ol>
+<li>Je me lève</li>
+<li>Je mange et je bois</li>
+<li>Je retourne me coucher</li>
+</ol>
+<p><h3> Voici une liste de definitions </h3></p>
+<dl>
+<dt>Chat</dt>
+<dd>Animal à 4 pattes qui fait "Miaou !"</dd>
+<dt>Chien</dt>
+<dd>Animal à 4 pattes qui fait "Ouaf Ouaf !"</dd>
+<dt>Prof de maths</dt>
+<dd>Personne qui enseigne des choses que personne ne comprend</dd>
+</dl>
+
+<p><h3>Voici une liste avec retrait (par défaut) :</h3></p>
+<ul class="retrait">
+<li>iphone</li>
+<li>Ligne 1<br />Ligne 2</li>
+<li>Vous pouvez voir<br />que le texte est décalé sur la droite</li>
+</ul>
+<p><h3>Voici une liste sans retrait :</h3></p>
+<ul class="pasderetrait">
+<li>Eneam</li>
+<li>IG1A</li>
+<li>Web design</li>
+
+<h2>Quelques listes non ordonnées</h2>
+<p><h3>Voici une liste à puce non ordonnée sans modification :</h3></p>
+
+<ul class="disque">
+<li>Abel</li>
+<li>Alberic</li>
+<li>Karol</li>
+</ul>
+
+<p>Avec <em>circle</em> :</p>
+<ul class="cercle">
+<li>Aryx</li>
+<li>Carmelle</li>
+<li>Sonia</li>
+</ul>
+
+<p>Avec <em>square</em> :</p>
+<ul class="carre">
+<li>Mangues</li>
+<li>Banane</li>
+<li>Avocat</li>
+</ul>
+<p>Avec <em>none</em> (sans puces) :</p>
+<ul class="rien">
+<li>Algebre</li>
+<li>Anglais</li>
+<li>puces</li>
+</ul>
+<h2>Quelques listes ordonnées</h2>
+	<p> <h3>Liste à puces ordonnée sans modification (= <em>decimal</em>)</h3></p>
+<ol>
+<li>Un</li>
+<li>Deux</li>
+<li>Trois</li>
+<li>Quatre</li>
+</ol>
+<p>Avec <em>decimal-leading-zero</em> (<strong>Ne fonctionne pas sous IE)</strong>) :</p>
+<ol class="commence_a_zero">
+<li>Un</li>
+<li>Deux</li>
+<li>Trois</li>
+<li>Quatre</li>
+</ol>
+<p>Avec <em>lower-alpha</em> :</p>
+<ol class="lettres_minuscules">
+<li>Un</li>
+<li>Deux</li>
+<li>Trois</li>
+<li>Quatre</li>
+</ol>
+<p>Avec <em>upper-roman</em> :</p>
+<ol class="chiffres_romains">
+<li>Un</li>
+<li>Deux</li>
+<li>Trois</li>
+<li>Quatre</li>
+</ol>
+<p>Avec <em>lower-greek</em> (<strong>Ne fonctionne pas sous IE</strong>) :</p>
+<ol class="lettres_grecques">
+<li>Un</li>
+<li>Deux</li>
+<li>Trois</li>
+<li>Quatre</li>
+</ol>
+<br>
+<ol class="lettres_majuscules">
+<li>Un</li>
+<li>Deux</li>
+<li>Trois</li>
+<li>Quatre</li>
+</ol>
+</br>
+<ul>
+	<li>Achats</li>
+	<li>Ventes</li>
+</ul>
+
+
+</body>
+</html>

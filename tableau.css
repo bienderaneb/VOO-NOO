@@ -1,0 +1,49 @@
+td,th /* Toutes les cellules des tableaux... */
+{
+    text-align: center; vertical-align: middle;
+border: 3px solid black; /* ... auront une bordure de 1px */
+padding: 10px;
+}
+
+table
+{
+font-family: 'Times New Roman', Times, serif; 
+width: 500px;
+border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */ margin: auto;
+box-shadow: 0 0 20px #0ff; overflow: hidden;
+}
+body{ 
+    background-color: rgb(165, 192, 192);
+}
+caption { 
+ font-size: large; color: rgb(108, 31, 45);
+ text-decoration: underline; font-;
+}
+#cap1{
+    caption-side: bottom;
+}
+#cap{
+    caption-side: left;
+}
+#border{
+    border-radius: 100px; border-color: darkred;
+}
+.couleur1 { 
+    color: red;
+}
+.couleur2 {
+    color: darkgoldenrod;}
+.tab1{
+ background-color: green; writing-mode: vertical-rl  ; text-orientation: inherit;   color: rgb(114, 22, 22);
+}
+.tab2{ 
+    background-color: rgb(147, 117, 117); font-style: italic; color: green;
+}
+#oblique{
+    font-style: normal; transform: rotate(-45deg)  ; height: 35px;
+}
+#ovl{
+    text-align: center ; text-shadow: 200cap;
+    text-transform: uppercase; text-decoration-line: underline;
+}
+.centre { text-align: center;}

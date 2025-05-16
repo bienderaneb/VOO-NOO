@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgb(118, 22, 208);
+      color: white;
+      font-family: Arial, sans-serif;
+      height: 100%;
+    }
+    .left, .center, .right {
+      flex: 1;
+      text-align: center;
+      position: relative;
+    }
+    .left img, .right img { width: 150px;
+      height: 120px;
+      margin: 10px; padding: 10px;
+    }
+    .center {
+      background: url('milieu.jpg') center/cover no-repeat;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .center h1 {
+      background: rgba(0,0,0,0.5);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+    #pic{background-image:url(img/code.jpg) ; background: center cover relative ;}
+  </style>
+</head>
+<body id="pic">
+  <div class="left">
+    <a href="https://portail.uac.bj" target="contentF"><img src="uac.jpg.jpg" alt="UACLogo" ></a>
+  </div>
+
+  <div class="center">
+    <h1>Bienvenue sur mon site Web ENEAM</h1>
+  </div>
+
+  <div class="right">
+    <a href="https://eneam.uac.bj" target="contenutF"><img src="eneam.jpg.jpg" alt="Image droite"></a>
+  </div>
+</body>
+</html>
